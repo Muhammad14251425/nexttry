@@ -19,7 +19,7 @@ const CubeTextAnimation = () => {
     }, [texts.length]);
 
     return (
-        <div className="relative w-96 h-48 overflow-hidden flex justify-center items-center bg-white">
+        <div className="relative w-96 h-36 sm:w-[480px] sm:h-40 lg:w-96 lg:h-36 overflow-hidden flex justify-center items-center">
             <AnimatePresence>
                 <motion.div
                     key={currentFace} // Use key to force remounting
@@ -27,7 +27,7 @@ const CubeTextAnimation = () => {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: '-300%', opacity: 0 }}
                     transition={{ duration: 1 }} // Adjust the duration to match your needs
-                    className={`absolute ${currentFace === 1 || currentFace === 2 ? "text-4xl" : "text-6xl"} font-bold`}
+                    className={`absolute  ${currentFace === 1 || currentFace === 2 ? "text-4xl sm:text-5xl" : "text-5xl lg:text-6xl sm:text-7xl"} font-bold`}
                     dangerouslySetInnerHTML={{ __html: texts[currentFace] }}
                 />
             </AnimatePresence>

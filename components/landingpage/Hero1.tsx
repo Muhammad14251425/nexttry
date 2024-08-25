@@ -27,10 +27,10 @@ const data = [
 
 const Hero1 = () => {
     return (
-        <div className='bg-[#EBFFE8] w-full h-[900px] px-4'>
-            <H2 initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className='text-center my-6 pt-24 text-lg'>Key features of our logistics services.</H2>
-            <H3 initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className='text-center text-5xl font-semibold' >Why Choose 3ULogistics?</H3>
-            <Div initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className='pt-12 max-w-7xl mx-auto grid grid-cols-3 gap-16'>
+        <div className='bg-[#EBFFE8] w-full h-auto pb-8 480:pb-20 480:h-[900px my-20 480:my-0 px-4 '>
+            <H2 initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className='text-center my-6 pt-16 480:pt-24 text-lg'>Key features of our logistics services.</H2>
+            <H3 initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className='text-center text-5xl font-semibold leading-snug' >Why Choose 3ULogistics?</H3>
+            <Div initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className='pt-12 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-16'>
                 {data.map((item, index) => (
                     <div key={index} className="space-y-4">
                         <H2 initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className="font-semibold text-2xl">{item.heading}</H2>

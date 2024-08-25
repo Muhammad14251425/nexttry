@@ -6,7 +6,7 @@ import React from 'react'
 
 const Services = () => {
     return (
-        <div className='overflow-hidden'>
+        <div className='overflow-hidden '>
             <Services1 />
             <Services2 />
             <Services3 />

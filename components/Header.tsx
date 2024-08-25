@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div className="max-w-7xl mx-auto flex justify-between p-3">
             <Link href="/"><Image src={MainImage} alt="main Image" className="h-14 w-20" /></Link>
-            <div className="flex items-center gap-8 font-light">
+            <div className="md:flex items-center gap-8 font-light hidden">
                 <Link href="/aboutus"><button className="hover:font-semibold transition-all duration-300">About Us</button></Link>
                 <Link href="/services"><button className="hover:font-semibold transition-all duration-300">Services</button></Link>
                 <Link href="/contactUs"><button className="hover:font-semibold transition-all duration-300">Contact Us</button></Link>

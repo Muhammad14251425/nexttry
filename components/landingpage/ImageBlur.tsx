@@ -11,7 +11,7 @@ const ImageBlur = () => {
         },100)
     },[])
     return (
-        <Image src={mainImage} alt='main Image' className={`rounded-md ${blur ? "scale-0" : "scale-100"} transform transition-transform duration-300`} />
+        <Image src={mainImage} alt='main Image' className={`rounded-md sm:rounded-r-none max-h-[450px] object-cover lg:object-contain lg:max-h-none ${blur ? "scale-0" : "scale-100"} transform transition-transform duration-300`} />
     )
 }
 

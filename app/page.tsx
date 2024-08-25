@@ -5,7 +5,7 @@ import Hero3 from "@/components/landingpage/Hero3";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Hero />
       <Hero1 />
       <Hero2 />

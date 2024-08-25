@@ -44,10 +44,10 @@ const Services3 = () => {
     };
 
     return (
-        <div className='bg-[#EBFFE8] h-[730px] w-screen mb-8 px-4'>
+        <div className='bg-[#EBFFE8] h-auto pb-10 lg:pb-0 lg:h-[730px] w-screen mb-8 px-4'>
             <div className='mt-20 max-w-md sm:max-w-lg md:max-w-2xl lg:min-h-screen lg:max-w-5xl xl:max-w-7xl mx-auto'>
                 <div className="md:grid md:grid-cols-2 gap-5">
-                    <div className="mt-6 md:mt-32">
+                    <div className="pt-12 md:pt-0 md:mt-24">
                         <P
                             initial={{ y: 90, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}

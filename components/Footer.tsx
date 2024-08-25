@@ -7,13 +7,13 @@ import Image from "next/image"
 const Footer = () => {
     return (
         <div className='bg-[#EBFFE8] h-80 '>
-            <div className='pt-24 max-w-7xl mx-auto px-4'>
-                <div className='flex items-center justify-between'>
-                    <ul className='flex items-center gap-5 font-semibold'>
-                        <button>About Us</button>
-                        <button>Our Services</button>
-                        <button>Contact Us</button>
-                        <button>Blogs</button>
+            <div className='pt-16 lg:pt-24 max-w-7xl mx-auto px-4'>
+                <div className='flex flex-col sm:flex-row items-center justify-between gap-10'>
+                    <ul className='flex items-center text-xs sm:text-base gap-5 font-semibold'>
+                        <button className="hover:underline">About Us</button>
+                        <button className="hover:underline">Our Services</button>
+                        <button className="hover:underline">Contact Us</button>
+                        <button className="hover:underline">Blogs</button>
                     </ul>
                     <div className='flex items-center gap-5 font-semibold'>
                         <Image src={twitter} alt="twitter logo" className="h-5 w-5" />
@@ -22,7 +22,7 @@ const Footer = () => {
                         <Image src={linkedin} alt="twitter logo" className="h-5 w-5" />
                     </div>
                 </div>
-                <p className="pt-24 text-center text-gray-500 font-light">© 3ULogistics 2023, All Rights Reserved</p>
+                <p className="pt-12 lg:pt-24 text-center text-gray-500 font-light text-xs sm:text-base">© 3ULogistics 2023, All Rights Reserved</p>
             </div>
         </div>
     )

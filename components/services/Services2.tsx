@@ -25,14 +25,14 @@ const data = [
 
 const Services2 = () => {
     return (
-        <div className='my-20 grid grid-cols-2 gap-28 px-4 max-w-7xl mx-auto'>
+        <div className='mt-10 lg:my-20 flex flex-col-reverse lg:grid lg:grid-cols-2 gap-8 xl:gap-28 lg:gap-16 px-4 max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-7xl mx-auto'>
             <Div
                 initial={{ x: -90, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 viewport={{ once: true }}
             >
-                <Image src={mainImage} alt='many Trucks' className='rounded-lg object-cover h-[580px] w-[680px] shadow-md' />
+                <Image src={mainImage} alt='many Trucks' className='rounded-lg object-cover lg:h-[580px] lg:w-[680px] shadow-md' />
             </Div>
             <div className='pt-6 space-y-4'>
                 <H4
