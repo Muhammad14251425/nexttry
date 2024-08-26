@@ -2,6 +2,8 @@ import MainImage from "@/public/HeaderFooter/mainLogo.png"
 import arrow from "@/public/arrow.svg"
 import Image from "next/image"
 import Link from "next/link"
+import SmallNav from "./SmallNav";
+import SmallNavbar from "./SmallNavbar";
 
 const Header = () => {
     return (
@@ -10,15 +12,17 @@ const Header = () => {
             <div className="md:flex items-center gap-8 font-light hidden">
                 <Link href="/aboutus"><button className="hover:font-semibold transition-all duration-300">About Us</button></Link>
                 <Link href="/services"><button className="hover:font-semibold transition-all duration-300">Services</button></Link>
-                <Link href="/contactUs"><button className="hover:font-semibold transition-all duration-300">Contact Us</button></Link>
+                <Link href="/contactus"><button className="hover:font-semibold transition-all duration-300">Contact Us</button></Link>
                 <Link href="/blogs"><button className="hover:font-semibold transition-all duration-300">Blogs</button></Link>
             </div>
-            <div>
+            <div className="flex items-center gap-4">
                 <button className="group flex gap-3 items-center bg-[#51D055] border-black hover:border rounded-full px-5 text-base py-2">
-                    Contact us 
-                <span>
-                    <Image src={arrow} alt="arrow" className="group-hover:translate-x-4 h-4 w-5 transform duration-300"  />
-                </span></button>
+                    Contact us
+                    <span>
+                        <Image src={arrow} alt="arrow" className="group-hover:translate-x-4 h-4 w-5 transform duration-300" />
+                    </span></button>
+                    {/* <SmallNav /> */}
+                    <SmallNavbar />
             </div>
         </div>
     )

@@ -70,13 +70,13 @@ const Hero2 = () => {
 
             </div>
             <div className="relative">
-                <Image src={backgroundImage} alt="background truck Image" className="object-cover h-[700px] 480:h-[450px] w-full" />
-                <div className="bg-[#086718] h-[700px] 480:h-[450px] top-0 absolute w-full opacity-80 backdrop-blur-sm">
+                <Image src={backgroundImage} alt="background truck Image" className="object-cover h-[700px] sm:h-[450px] w-full" />
+                <div className="bg-[#086718] h-[700px] sm:h-[450px] top-0 absolute w-full opacity-80 backdrop-blur-sm">
                     <div className="max-w-7xl mx-auto px-6 mt-14 space-y-4">
                         <H2 initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className="text-[#6BD96B] font-semibold">Our Achievements</H2>
                         <H3 initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className="text-white font-semibold text-3xl">Trusted by Thousands</H3>
                         <P initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className="text-[#D1D5DB] font-semibold pt-5">Delivering excellence in logistics and transportation.</P>
-                        <div className="pt-16 flex flex-col 480:flex-row items-center gap-4 ml-5">
+                        <div className="pt-16 flex flex-col sm:flex-row sm:items-center gap-4">
                             {data.map((item, index) => (
                                 <div key={index} className="border-l ml-2 text-white border-white/30 pl-8 space-y-5 w-[400px]">
                                     <H2 initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className="font-semibold text-3xl">{item.quantity}</H2>
