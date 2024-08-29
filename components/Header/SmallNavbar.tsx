@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { MdMenu } from "react-icons/md";
 
-const data = [{ page: "About Us", href: "about" }, { page: "Our Services", href: "/services" }, { page: "Contact Us", href: "/contactus" } , { page: "Blogs", href: "/blogs" }]
+const data = [{ page: "About Us", href: "aboutus" }, { page: "Our Services", href: "/services" }, { page: "Contact Us", href: "/contactus" } , { page: "Blogs", href: "/blogs" }]
 
 export default function SmallNavbar() {
 	const router = useRouter();
