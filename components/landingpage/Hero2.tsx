@@ -27,13 +27,13 @@ const Hero2 = () => {
         <div >
             <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-2">
                 <Image src={mainImage} alt="truck" className="object-cover h-[500px]" />
-                <Div className="bg-[#086718] py-14 sm:col-span-2 lg:col-span-1 flex flex-col gap-5 pl-10 xl:pl-24 justify-center overflow-hidden">
+                <Div className="bg-[#561D25] py-14 sm:col-span-2 lg:col-span-1 flex flex-col gap-5 pl-10 xl:pl-24 justify-center overflow-hidden">
                     <H3
                         initial={{ y: 90, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
-                        className="text-[#6BD96B] font-semibold"
+                        className="text-[#ED3224] font-semibold"
                     >
                         Reliable Logistics Partner
                     </H3>
@@ -63,7 +63,7 @@ const Hero2 = () => {
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.6 }}
                         viewport={{ once: true }}
-                        className="bg-[#51D055] px-5 py-3 w-fit text-white font-semibold rounded-md">
+                        className="bg-[#ED3224] px-5 py-3 w-fit text-white font-semibold rounded-md">
                         Request a Vehicle
                     </Buttton>
                 </Div>
@@ -71,9 +71,9 @@ const Hero2 = () => {
             </div>
             <div className="relative">
                 <Image src={backgroundImage} alt="background truck Image" className="object-cover h-[700px] sm:h-[450px] w-full" />
-                <div className="bg-[#086718] h-[700px] sm:h-[450px] top-0 absolute w-full opacity-80 backdrop-blur-sm">
+                <div className="bg-[#561D25] h-[700px] sm:h-[450px] top-0 absolute w-full opacity-80 backdrop-blur-sm">
                     <div className="max-w-7xl mx-auto px-6 mt-14 space-y-4">
-                        <H2 initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className="text-[#6BD96B] font-semibold">Our Achievements</H2>
+                        <H2 initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className="text-[#ED3224] font-semibold">Our Achievements</H2>
                         <H3 initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className="text-white font-semibold text-3xl">Trusted by Thousands</H3>
                         <P initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className="text-[#D1D5DB] font-semibold pt-5">Delivering excellence in logistics and transportation.</P>
                         <div className="pt-16 flex flex-col sm:flex-row sm:items-center gap-4">

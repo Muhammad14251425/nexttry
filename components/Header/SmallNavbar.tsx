@@ -20,7 +20,7 @@ export default function SmallNavbar() {
 				<SheetTrigger asChild>
 					<MdMenu className="h-7 w-7 cursor-pointer md:hidden" />
 				</SheetTrigger>
-				<SheetContent className="p-6">
+				<SheetContent className="">
 					<motion.div
 						initial={{ x: "100%" }}
 						animate={{ x: 0 }}

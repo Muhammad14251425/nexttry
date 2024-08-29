@@ -60,9 +60,9 @@ const ContactUs2 = () => {
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: index === 0 ? 0 : index === 1 ? 0.2 : index === 2 ? 0.4 : 0.6 }}
                             viewport={{ once: true }}
-                            key={index} className='p-10 space-y-5 bg-[#EBFFE8] rounded-md'>
+                            key={index} className='p-10 space-y-5 bg-[#222222]/10 rounded-md'>
                             <h2 className='text-lg font-semibold'>{item.heading}</h2>
-                            <p className='font-semibold text-[#51D055] text-xs'>{item.email}</p>
+                            <p className='font-semibold text-[#ED3224] text-xs'>{item.email}</p>
                             <p className='font-light text-xs'>{item.phoneNumber}</p>
                         </Div>
                     ))}
@@ -92,7 +92,7 @@ const ContactUs2 = () => {
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: index === 0 ? 0 : 0.2 }}
                             viewport={{ once: true }}
-                            key={index} className='p-10 space-y-5 bg-[#EBFFE8] rounded-md'>
+                            key={index} className='p-10 space-y-5 bg-[#222222]/10 rounded-md'>
                             <h2 className='text-lg font-semibold'>{item.name}</h2>
                             <p className='font-light text-xs'>{item.data}</p>
                         </Div>

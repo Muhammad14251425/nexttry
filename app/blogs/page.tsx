@@ -21,7 +21,7 @@ const Blogs = () => {
                             <div className='border-2 px-2 pb-2 border-t-0 min-h-52 rounded-b-md flex flex-col justify-between'>
                                 <h2 className='pt-4 text-2xl font-medium leading-10 w-[95%] '>{item.heading1}</h2>
                                 <Link href={`/blogs/${item.id}`} className=''>
-                                    <p className='mt-4 font-semibold text-[#51D055]'>Read More <span className='text-xl ml-2'>+</span></p>
+                                    <p className='mt-4 font-semibold text-[#ED3224]'>Read More <span className='text-xl ml-2'>+</span></p>
                                 </Link>
                             </div>
                         </div>

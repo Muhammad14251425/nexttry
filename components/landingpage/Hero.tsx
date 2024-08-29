@@ -14,8 +14,8 @@ const Hero = () => {
                 <div className='absolute top-2 grid grid-cols-1 lg:grid-cols-2 px-4 sm:px-0'>
                     <div className='lg:p-6 lg:px-8 xl:px-14'>
                         <div className='flex flex-col 480:flex-row items-start 480:items-center gap-8 480:mt-12'>
-                            <button className='text-xs sm:text-base px-4 py-2 lg:text-xs font-semibold text-[#51D055] border rounded-full border-[#51D055]' >What{"'"}s New</button>
-                            <h2 className='flex items-center gap-1 text-[#51D055] text-xs sm:text-base lg:text-xs font-semibold tracking-wide'>Introducing our new fleet of eco-friendly trucks
+                            <button className='text-xs sm:text-base px-4 py-2 lg:text-xs font-semibold text-[#ED3224] border rounded-full border-[#ED3224]' >What{"'"}s New</button>
+                            <h2 className='flex items-center gap-1 text-[#ED3224] text-xs sm:text-base lg:text-xs font-semibold tracking-wide'>Introducing our new fleet of eco-friendly trucks
                                 <Image src={greater} alt='greater' className='h-3 w-3' />
                             </h2>
                         </div>
@@ -24,7 +24,7 @@ const Hero = () => {
                             <p className='max-w-xl lg:max-w-md text-lg font-normal text-gray-500 mt-8' >Fast, reliable logistics and transportation services. Delivering products through trucks and trains.</p>
                         </div>
                         <div className='flex items-center gap-3 480:gap-10 mb-16'>
-                            <button className='bg-[#51D055] text-white px-2 py-3 sm:px-8 sm:py-3 lg:py-5 font-semibold rounded-md'>Explore Our Services</button>
+                            <button className='bg-[#ED3224] text-white px-2 py-3 sm:px-8 sm:py-3 lg:py-5 font-semibold rounded-md'>Explore Our Services</button>
                             <button className='border px-3 py-3 rounded-md border-black 480:border-none flex items-center gap-2 group'>Learn More <Image src={arrow} alt='greater than' className='h-3 w-3 group-hover:translate-x-3 transform duration-300' /> </button>
                         </div>
                     </div>

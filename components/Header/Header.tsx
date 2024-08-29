@@ -16,7 +16,7 @@ const Header = () => {
                 <Link href="/blogs"><button className="hover:font-semibold transition-all duration-300">Blogs</button></Link>
             </div>
             <div className="flex items-center gap-4">
-                <button className="group flex gap-3 items-center bg-[#51D055] border-black hover:border rounded-full px-5 text-base py-2">
+                <button className="group flex gap-3 items-center bg-[#ED3224] border-black text-white hover:border rounded-full px-5 text-base py-2">
                     Contact us
                     <span>
                         <Image src={arrow} alt="arrow" className="group-hover:translate-x-4 h-4 w-5 transform duration-300" />

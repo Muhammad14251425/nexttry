@@ -40,7 +40,7 @@ const Services2 = () => {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
-                    className='text-[#39B641] font-semibold'>Our Comprehensive Services</H4>
+                    className='text-[#ED3224] font-semibold'>Our Comprehensive Services</H4>
                 <H2
                     initial={{ y: 90, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}

@@ -5,7 +5,7 @@ import Image from "next/image"
 const Services4 = () => {
     return (
         <div className='max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-7xl mx-auto pt-2 pb-20 px-4'>
-            <h2 className='text-xs text-center lg:text-left font-semibold text-[#39B641]'>Services we offer</h2>
+            <h2 className='text-xs lg:text-sm text-center lg:text-left font-semibold text-[#ED3224]'>Services we offer</h2>
             <div className='grid grid-cols-1 gap-4 text-center lg:text-left lg:grid-cols-2 mt-4'>
                 <H4
                     initial={{ y: 90, opacity: 0 }}
