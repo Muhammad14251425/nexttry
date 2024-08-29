@@ -10,7 +10,7 @@ const Hero = () => {
     return (
         <div className='relative'>
             <Div className='max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-7xl mx-auto relative lg:pb-6'>
-                <Image src={pattern} alt='pattern' className=' lg:h-[700px] w-full opacity-10' />
+                <Image src={pattern} alt='pattern' className=' lg:h-[700px] w-full dark:opacity-10 opacity-0 object-cover' />
                 <div className='absolute top-2 grid grid-cols-1 lg:grid-cols-2 px-4 sm:px-0'>
                     <div className='lg:p-6 lg:px-8 xl:px-14'>
                         <div className='flex flex-col 480:flex-row items-start 480:items-center gap-8 480:mt-12'>
