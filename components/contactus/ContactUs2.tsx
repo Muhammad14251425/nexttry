@@ -1,6 +1,7 @@
 import { Div, H2, P, Span } from "@/libs/motion"
 import location from "@/public/contactus/contactus2/location.svg"
 import Image from "next/image"
+import ContactUsForm from "./ContactUsForm"
 
 const data = [
     {
@@ -52,6 +53,7 @@ const ContactUs2 = () => {
                         transition={{ duration: 0.5, delay: 0.2 }}
                         viewport={{ once: true }}
                         className='text-gray-500 text-xs max-w-xs leading-loose tracking-wider'>For any inquiries or assistance, feel free to contact us. We&apos;re here to help.</P>
+                    <ContactUsForm />
                 </div>
                 <div className='col-span-2 grid md:grid-cols-1 lg:grid-cols-2 gap-8'>
                     {data.map((item, index) => (
