@@ -1,9 +1,9 @@
 import image1 from "@/public/aboutus/aboutus3/about3one.jpeg"
 import Image from "next/image"
-import vision from "@/public/aboutus/aboutus3/vision.jpg"
+import vision from "@/public/aboutus/aboutus3/vision.png"
 import visiontruck from "@/public/aboutus/aboutus3/vision-truck.jpg"
 import mision from "@/public/aboutus/aboutus3/mission.jpg"
-import missioLogo from "@/public/aboutus/aboutus3/missionLogo.png"
+import missioLogo from "@/public/aboutus/aboutus3/mission.png"
 import { Div, H2, H3, P } from "@/libs/motion"
 
 const data = [
@@ -78,14 +78,14 @@ const About3 = () => {
                                 transition={{ duration: 0.8 }}
                                 viewport={{ once: true }}
                                 className='text-3xl sm:text-4xl lg:text-6xl font-semibold px-2'>Our Vision</H2>
-                            <Image priority src={vision} alt='vision' className="h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 rounded-full" />
+                            <Image priority src={vision} alt='vision' className="h-10 w-10 sm:h-12 sm:w-12 lg:h-10 lg:w-10 rounded-full" />
                         </div>
                         <P
                             initial={{ y: 90, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
-                            className="px-4 text-base sm:text-lg lg:text-lg tracking-widest font-semibold font-sans mt-4">
+                            className="px-4 text-base sm:text-lg lg:text-lg tracking-widest font-semibold mt-4">
                             Working towards revolutionizing and disrupting the logistics industry in Pakistan through technology and services, we are penetrating the industry via digitalization of transport services, ensuring absolute excellence.
                         </P>
                     </div>
@@ -108,14 +108,14 @@ const About3 = () => {
                             <h2
 
                                 className='text-3xl sm:text-4xl lg:text-6xl font-semibold'>Our Mission</h2>
-                            <Image priority src={missioLogo} alt='vision' className="h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-20 rounded-full" />
+                            <Image priority src={missioLogo} alt='vision' className="h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 rounded-full" />
                         </Div>
                         <P
                             initial={{ y: 90, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.6, delay: 0.6 }}
                             viewport={{ once: true }}
-                            className="text-base sm:text-lg lg:text-lg tracking-widest font-semibold font-sans mt-4">
+                            className="text-base sm:text-lg lg:text-lg tracking-widest font-semibold mt-4">
                             To ensure absolute excellence in transport services, we are integrating Phase 1 stage, allowing our clients with transparency in real-time access and updates of their dispatches. Phase 2 will lead our clients to a completely optimized supply chain system, allowing them direct access to their dispatches and removal of unnecessary intermediaries from the process.                        </P>
                     </div>
                     <Image priority src={mision} alt="truck" className="h-60 sm:h-72 lg:h-72 w-[45%] rounded-md mt-6 lg:mt-0 object-cover" />

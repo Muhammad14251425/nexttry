@@ -15,7 +15,7 @@ const About1 = () => {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
-                    className='h-[450px] w-[580px] bg-white rounded-3xl p-16 space-y-3'>
+                    className='h-[450px] w-[580px] bg-white rounded-3xl px-16 py-10 space-y-3'>
                     <H3
                         initial={{ y: 90, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}

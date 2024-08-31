@@ -19,7 +19,7 @@ const CubeTextAnimation = () => {
     }, [texts.length]);
 
     return (
-        <div className="relative w-96 h-36 sm:w-[480px] sm:h-40 lg:w-[440px] lg:h-36 overflow-hidden flex justify-center items-center">
+        <div className="relative w-96 h-36 sm:w-[480px] sm:h-40 lg:w-[470px] lg:h-36 overflow-hidden flex justify-center items-center">
             <AnimatePresence>
                 <motion.div
                     key={currentFace} // Use key to force remounting

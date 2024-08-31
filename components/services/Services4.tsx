@@ -12,7 +12,7 @@ const Services4 = () => {
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
-                    className='text-3xl lg:text-4xl max-w-2xl lg:max-w-md mx-auto lg:mx-0 leading-snug font-bold'>We Manage Logistics For World&apos;s Leading Multinaltonal Companies</H4>
+                    className='text-3xl lg:text-4xl max-w-2xl lg:max-w-md mx-auto lg:mx-0 leading-snug font-bold'>We Manage Logistics For World&apos;s Leading Multinational Companies</H4>
                 <P
                     initial={{ y: 90, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}

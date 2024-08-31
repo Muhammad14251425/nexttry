@@ -45,7 +45,7 @@ const About5 = () => {
 
             {/* →  Being honest in our communication. with custom animation */}
             <Span
-              className="font-semibold text-3xl tracking-wider ml-4"
+              className="font-semibold text-2xl tracking-wider ml-4"
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{
@@ -79,7 +79,7 @@ const About5 = () => {
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.8, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="font-semibold text-3xl tracking-wider ml-4"
+              className="font-semibold text-2xl tracking-wider ml-4"
             >
               → Humble in our achievements.
             </Span>
@@ -106,7 +106,7 @@ const About5 = () => {
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: 1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="font-semibold text-3xl tracking-wider ml-4"
+              className="font-semibold text-2xl tracking-wider ml-4"
             >
               → Establishing trust with our clients.
             </Span>
@@ -133,7 +133,7 @@ const About5 = () => {
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: 1.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="font-semibold text-3xl tracking-wider ml-4"
+              className="font-semibold text-2xl tracking-wider ml-4"
             >
               → Delivering exceptional services to our clients.
             </Span>
@@ -160,7 +160,7 @@ const About5 = () => {
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: 1.4, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="font-semibold text-3xl tracking-wider ml-4"
+              className="font-semibold text-2xl tracking-wider ml-4"
             >
               → Looking after our own.
             </Span>
@@ -187,7 +187,7 @@ const About5 = () => {
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: 1.6, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="font-semibold text-3xl tracking-wider ml-4"
+              className="font-semibold text-2xl tracking-wider ml-4"
             >
               → Executing with firm determination.
             </Span>
