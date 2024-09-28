@@ -1,6 +1,6 @@
 import { contactUsdata } from "@/libs/contactus"
 import { Div, H1, P } from "@/libs/motion"
-import backgroundImage from "@/public/contactus/backgroundMainImage.jpeg"
+import backgroundImage from "@/public/contactus/main_image-transformed.jpeg"
 import Image from "next/image"
 
 
@@ -46,7 +46,7 @@ const ContactUs1 = () => {
                                 >
                                     <Image src={item.image} alt={item.title} className="h-5 w-5 sm:h-9 sm:w-9 md:h-10 md:w-10 lg:h-6 lg:w-6 xl:h-8 xl:w-8" />
                                     <div className="flex flex-col md:gap-6 lg:gap-4 xl:gap-6">
-                                        <h2 className="font-semibold text-xl sm:text-2xl lg:text-xl text-[#222222]">{item.title}</h2>
+                                        <h2 className="font-semibold text-xl sm:text-2xl lg:text-xl text-white">{item.title}</h2>
                                         <p className="text-lg sm:text-xl md:text-lg font-semibold text-white">{item.para}</p>
                                     </div>
                                 </Div>

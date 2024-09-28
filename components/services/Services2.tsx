@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import mainImage from "@/public/services/services2Image.jpeg"
+import mainImage from "@/public/services/shipping-1920w.webp"
 import littleTruck from "@/public/services/littelTruck.svg"
 import train from "@/public/services/train.svg"
 import lightning from "@/public/services/lightining.svg"

@@ -1,4 +1,4 @@
-import mainImage from "@/public/indexpage/try3mainImage.jpeg"
+import mainImage from "@/public/indexpage/try3mainImage.jpg"
 import Image from "next/image"
 import backgroundImage from "@/public/indexpage/hero3subImage.jpeg"
 import { Buttton, Div, H2, H3, P } from "@/libs/motion"
@@ -71,7 +71,7 @@ const Hero2 = () => {
             </div>
             <div className="relative">
                 <Image src={backgroundImage} alt="background truck Image" className="object-cover h-[700px] sm:h-[450px] w-full" />
-                <div className="bg-[#561D25] h-[700px] sm:h-[450px] top-0 absolute w-full opacity-80 backdrop-blur-sm">
+                <div className="bg-[#561D25] h-[700px] sm:h-[450px] top-0 absolute w-full opacity-95 backdrop-blur-3xl">
                     <div className="max-w-7xl mx-auto px-6 mt-14 space-y-4">
                         <H2 initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className="text-[#ED3224] font-semibold">Our Achievements</H2>
                         <H3 initial={{ y: 100, opacity: 0.2 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className="text-white font-semibold text-3xl">Trusted by Thousands</H3>

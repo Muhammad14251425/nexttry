@@ -1,5 +1,5 @@
 import React from 'react'
-import greenMainPic from '@/public/aboutus/aboutusmain.webp'
+import greenMainPic from '@/public/aboutus/mainImage.jpg'
 import Image from 'next/image'
 import arrow from "@/public/aboutus/arrow.svg"
 import { Buttton, Div, H1, H3, P } from '@/libs/motion'

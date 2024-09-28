@@ -1,5 +1,5 @@
 'use client'
-import mainImage from "@/public/indexpage/mainImage.jpeg"
+import mainImage from "@/public/indexpage/mainImageee.jpg"
 import Image from 'next/image'
 import { useEffect, useState } from "react"
 

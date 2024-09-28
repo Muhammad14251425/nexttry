@@ -1,201 +1,132 @@
-import { H2, H3, Span } from '@/libs/motion'
-import React from 'react'
+import { Div } from '@/libs/motion';
+import Image from 'next/image';
+import CoreValues from './CoreValues';
 
-const About5 = () => {
+type ArrayData = {
+  id: number
+  x: number
+  y: number
+  imageUrl: string
+  heading: string
+  body: string
+  position: 'left' | 'right';
+}[]
+
+const Infographic = () => {
+  const coreValues: ArrayData = [
+    {
+      id: 1,
+      x: -423,
+      y: -333,
+      imageUrl: "/aboutus/aboutus66/T.png",
+      heading: "Transparency",
+      body: "Being honest in our communication.",
+      position: 'left'
+    }, // Top-left
+    {
+      id: 2,
+      x: 25,
+      y: -320,
+      imageUrl: "/aboutus/aboutus66/H.png",
+      heading: "Humility",
+      body: "Humble in our achievements.",
+      position: 'right'
+    },  // Top-right
+    {
+      id: 3,
+      x: 135,
+      y: -130,
+      imageUrl: "/aboutus/aboutus66/R.png",
+      heading: "Reliability",
+      body: "Establishing trust with our clients.",
+      position: 'right'
+    },             // Right
+    {
+      id: 4,
+      x: 24,
+      y: 79,
+      imageUrl: "/aboutus/aboutus66/E1.png",
+      heading: "Excellence",
+      body: "Delivering exceptional services to our clients.",
+      position: 'right'
+    },        // Bottom-right
+    {
+      id: 5,
+      x: -422,
+      y: 92,
+      imageUrl: "/aboutus/aboutus66/E2.png",
+      heading: "Empathy",
+      body: "Looking after our own.",
+      position: 'left'
+    },      // Bottom-left
+    {
+      id: 6,
+      x: -555,
+      y: -130,
+      imageUrl: "/aboutus/aboutus66/U.png",
+      heading: "Unwavering",
+      body: "Executing with firm determination.",
+      position: 'left'
+    },  // Left
+  ];
+
+  // Variants for the central circle animation
+  const centerVariants = {
+    hidden: { scale: 0, opacity: 0 },
+    visible: { scale: 1, opacity: 1 },
+  };
+
+  // Variants for outer circles to start at center and move to final position
+  const circleVariants = (x: number, y: number) => ({
+    hidden: {
+      x: 0, // Start at center
+      y: 0,
+      opacity: 0,
+    },
+    visible: {
+      x: `${x}px`, // Move to final position
+      y: `${y}px`,
+      opacity: 1,
+    },
+    hiddden: {
+      x: -210, // Start at center
+      y: -150,
+      opacity: 0,
+    }
+  });
+
   return (
-    <div className='bg-[#561D25] py-14'>
-      <div className='max-w-7xl mx-auto text-center'>
-        <H2
-          initial={{ y: 90, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, }}
+    <div className="relative flex items-center justify-center min-h-screen bg-[#ED3224]/60 text-white">
+      {/* Central Circle */}
+      <Div
+        className="absolute flex items-center justify-center w-72 h-72 rounded-full z-10"
+        variants={centerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.1 }}
+      >
+          <h2 className='absolute top-16 text-2xl'>THREEU</h2>
+        <Image src="/aboutus/aboutus6/middleCircle.png" alt='middle' height={500} width={500} className='w-72 h-72 rounded-ful' />
+      </Div>
+
+      {/* Outer Circles */}
+      {coreValues.map((value, index) => (
+        <Div
+          key={value.id}
+          className="absolute flex flex-col items-center justify-center w-[420px] h-60 transition-transform transform"
+          initial="hiddden"
+          whileInView="visible"
           viewport={{ once: true }}
-          className='text-7xl font-semibold text-white' >Our Core Values</H2>
-        <H3
-          initial={{ y: 90, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-          className='text-[#ED3224] text-5xl mt-7 tracking-[10px] font-bold shadow-black'
-          style={{ textShadow: '1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff' }}
-        >T.H.R.E.E-U</H3>
-        <div className='text-left text-5xl mt-10 font-bold space-y-3 text-[#ED3224]'>
-          {/* <H3 className=''>T <span className='text-white tracking-widest text-3xl font-semibold'>ransparency</span> <span className='font-semibold text-3xl tracking-wider'>→  Being honest in our communication.</span></H3> */}
-
-          <H3 className="flex items-center">
-            {/* T with bounce effect from left */}
-            <Span
-              className="text-[#ED3224] text-5xl font-bold"
-              initial={{ x: '-100vw' }}
-              animate={{ x: 0 }}
-              transition={{ type: 'spring', stiffness: 500, damping: 20, duration: 0.5 }}
-            >
-              T
-            </Span>
-
-            {/* ransparency with bounce effect from right */}
-            <Span
-              className="text-white tracking-widest text-3xl font-semibold ml-2"
-              initial={{ x: '100vw', opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 25, duration: 0.6 }}
-            >
-              ransparency
-            </Span>
-
-            {/* →  Being honest in our communication. with custom animation */}
-            <Span
-              className="font-semibold text-2xl tracking-wider ml-4"
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{
-                delay: 0.6,
-                duration: 0.8,
-                ease: [0.16, 1, 0.3, 1], // Custom easing for a modern, smooth effect
-              }}
-            >
-              → Being honest in our communication.
-            </Span>
-          </H3>
-
-          <H3 className="pl-20 flex items-center">
-            <Span
-              initial={{ x: '-100vw' }}
-              animate={{ x: 0 }}
-              transition={{ type: 'spring', stiffness: 500, damping: 20, duration: 0.5 }}
-              className="text-[#ED3224] text-5xl font-bold"
-            >
-              H
-            </Span>
-            <Span
-              initial={{ x: '100vw', opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 25, duration: 0.6 }}
-              className="text-white tracking-widest text-3xl font-semibold ml-2"
-            >
-              umility
-            </Span>
-            <Span
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.8, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="font-semibold text-2xl tracking-wider ml-4"
-            >
-              → Humble in our achievements.
-            </Span>
-          </H3>
-
-          <H3 className="pl-40 flex items-center">
-            <Span
-              initial={{ x: '-100vw' }}
-              animate={{ x: 0 }}
-              transition={{ type: 'spring', stiffness: 500, damping: 20, duration: 0.5 }}
-              className="text-[#ED3224] text-5xl font-bold"
-            >
-              R
-            </Span>
-            <Span
-              initial={{ x: '100vw', opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 25, duration: 0.6 }}
-              className="text-white tracking-widest text-3xl font-semibold ml-2"
-            >
-              eliability
-            </Span>
-            <Span
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="font-semibold text-2xl tracking-wider ml-4"
-            >
-              → Establishing trust with our clients.
-            </Span>
-          </H3>
-
-          <H3 className="pl-60 flex items-center">
-            <Span
-              initial={{ x: '-100vw' }}
-              animate={{ x: 0 }}
-              transition={{ type: 'spring', stiffness: 500, damping: 20, duration: 0.5 }}
-              className="text-[#ED3224] text-5xl font-bold"
-            >
-              E
-            </Span>
-            <Span
-              initial={{ x: '100vw', opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 25, duration: 0.6 }}
-              className="text-white tracking-widest text-3xl font-semibold ml-2"
-            >
-              xcellence
-            </Span>
-            <Span
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 1.2, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="font-semibold text-2xl tracking-wider ml-4"
-            >
-              → Delivering exceptional services to our clients.
-            </Span>
-          </H3>
-
-          <H3 className="pl-80 flex items-center">
-            <Span
-              initial={{ x: '-100vw' }}
-              animate={{ x: 0 }}
-              transition={{ type: 'spring', stiffness: 500, damping: 20, duration: 0.5 }}
-              className="text-[#ED3224] text-5xl font-bold"
-            >
-              E
-            </Span>
-            <Span
-              initial={{ x: '100vw', opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 25, duration: 0.6 }}
-              className="text-white tracking-widest text-3xl font-semibold ml-2"
-            >
-              mpathy
-            </Span>
-            <Span
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 1.4, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="font-semibold text-2xl tracking-wider ml-4"
-            >
-              → Looking after our own.
-            </Span>
-          </H3>
-
-          <H3 className="pl-[400px] flex items-center">
-            <Span
-              initial={{ x: '-100vw' }}
-              animate={{ x: 0 }}
-              transition={{ type: 'spring', stiffness: 500, damping: 20, duration: 0.5 }}
-              className="text-[#ED3224] text-5xl font-bold"
-            >
-              U
-            </Span>
-            <Span
-              initial={{ x: '100vw', opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ type: 'spring', stiffness: 400, damping: 25, duration: 0.6 }}
-              className="text-white tracking-widest text-3xl font-semibold ml-2"
-            >
-              nwavering
-            </Span>
-            <Span
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 1.6, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="font-semibold text-2xl tracking-wider ml-4"
-            >
-              → Executing with firm determination.
-            </Span>
-          </H3>
-        </div>
-      </div>
+          variants={circleVariants(value.x, value.y)}
+          transition={{ type: 'spring', stiffness: 100, damping: 50 }}
+          style={{ top: '50%', left: '50%' }} // Start from center
+        >
+          <CoreValues imageurl={value.imageUrl} body={value.body} heading={value.heading} position={value.position} numbering={value.id} />
+        </Div>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default About5
+export default Infographic;
